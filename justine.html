@@ -6,15 +6,28 @@
     <title>Une page HTML</title>
     <!-- style dans l'en-tête -->
     <style>
+        body {
+            background: url(img/sac-frappe-boxe.jpg) no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        #container {
+            background-color: rgba(255, 255, 255, 0.699);
+            width: 1200px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 15px;
+        }
         h1 {
-            font-size: 5em;
+            margin-top: 10px;
+            font-size: 4em;
             text-transform: uppercase;
             text-align: center;
             color: rgb(65, 63, 63);
             text-shadow: 1px 1px 10px grey;
         }
         nav {
-            background-color: rgb(177, 177, 177);
+            background-color: rgb(87, 87, 87);
             border-radius: 10px;
             text-align: center;
             height: 80px;
@@ -24,7 +37,7 @@
         }
         nav a {
             text-transform: uppercase;
-            color: black;
+            color: #fff;
             text-decoration: none;
             font-weight: 600;
             margin: 30px;
@@ -72,7 +85,7 @@
             height: 30px;
             align-items: center;
             text-align: center;
-            padding: 0;
+            padding: 0 10px;
             margin: 0;
         }
         tr:nth-child(even) {
@@ -84,109 +97,112 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>La boxe à travers les âges</h1>
-        <nav>
-            <a href="#intro">Introduction</a>
-            <a href="#ali">Mohamed Ali</a>
-            <a href="#tyson">Mike Tyson</a>
-            <a href="#yoka">Tony Yoka</a>
-            <a href="#formulaire">Votez !</a>
-        </nav>
-    </header>
-    <section>
-        <h2 id="intro">Introduction à la boxe</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa autem consequuntur maxime deserunt nobis accusantium consectetur dicta, ad itaque magni ullam perspiciatis beatae a soluta atque suscipit numquam ipsum nostrum.</p>
-        <p>Sint beatae corporis voluptatum vel voluptas quas dolores assumenda minus earum ratione, ut, molestiae laboriosam est cum. Nemo esse vitae accusantium rerum, repellendus iure? Cum voluptatibus id ipsam voluptas quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, repudiandae esse, vel quae voluptates est amet quaerat libero sit obcaecati asperiores iusto ducimus ad debitis earum neque? Officia, ullam voluptate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque expedita impedit consectetur necessitatibus repudiandae esse ab? Amet accusantium voluptates tenetur dolorem repellendus perspiciatis recusandae quasi repellat aperiam dolore? Minima, pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus non quasi culpa necessitatibus animi aliquid nulla itaque eius, corporis fugiat asperiores velit iusto laborum natus id, accusamus eum exercitationem pariatur.</p>
-    </section>
-    <section>
-        <h2 id="ali">Mohammed Ali, uen boxe révolutionnaire</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque modi quisquam corrupti, odio maxime est dolorem totam soluta doloribus consequuntur aliquam porro earum sapiente officia voluptatum minus excepturi aperiam sequi.</p>
-        <div class="galerie-1">
-            <figure>
-                <img src="img/ali.jpg" alt="Mohamed Ali">
-                <figcaption>Mohamed Ali</figcaption>
-            </figure>
-            <figure>
-                <img src="img/ali2.jpg" alt="Mohamed Ali">
-                <figcaption>Mohamed Ali</figcaption>
-            </figure>
-            <table>
-                <tr>
-                    <th colspan="2">Des combats légendaires</th>
-                </tr>
-                <tr>
-                    <td>Sonny Liston</td>
-                    <td>25 mai 1965</td>
-                </tr>
-                <tr>
-                    <td>Joe Frazier</td>
-                    <td>8 mars 1971</td>
-                </tr>
-                <tr>
-                    <td>George Foreman</td>
-                    <td>30 octobre 1974</td>
-                </tr>
-                <tr>
-                    <td>Joe Frazier</td>
-                    <td>1<sup>er</sup> octobre 1975</td>
-                </tr>
-                <tr>
-                    <td>Trevor Berbick</td>
-                    <td>11 décembre 1981</td>
-                </tr>
-            </table>
-        </div>
-        <table></table>
-    </section>
-    <section>
-        <h2 id="tyson">Mike Tyson, l'héritier</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero id possimus iusto illo. Et deleniti sit magnam ducimus quam, excepturi odio, reprehenderit tempore nisi omnis amet inventore, dolorem harum voluptas.</p>
-        <p>Praesentium error harum autem cum odio delectus vel iste sequi voluptatum magnam placeat modi, ad non tenetur perspiciatis quam quas sed saepe laudantium nobis necessitatibus molestias accusantium. Dicta, vel? Temporibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga incidunt non ex illum similique eum maxime accusantium debitis ducimus mollitia dolorem sed quasi accusamus fugit, ipsa quam. Nemo, amet laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quidem libero tempora vitae similique exercitationem tempore cum modi sapiente nobis necessitatibus totam labore nesciunt ipsa. Consequatur error delectus corporis quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore itaque fugit, beatae optio commodi tenetur ad at vero dolorum deserunt cum vel accusantium dolorem libero enim voluptate a accusamus exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla, natus voluptates sit explicabo pariatur qui dolorem! Provident cumque, numquam quos architecto alias harum iste mollitia! At quis saepe magnam!</p>
-        <div class="galerie-2">
-            <figure>
-                <img src="img/tyson.jpg" alt="Mike Tyson" class="filtre-gris">
-                <figcaption>Mike Tyson</figcaption>
-            </figure>
-            <figure>
-                <img src="img/tyson2.jpg" alt="Mike Tyson" class="filtre-gris">
-                <figcaption>Mike Tyson</figcaption>
-            </figure>
-        </div>
-        <p>Doloribus nisi reiciendis tempore in assumenda dolorem repellendus hic id ad et, corporis totam nulla minus quidem delectus iure ea sint alias! Minus necessitatibus aperiam eum cupiditate facere dolores? Porro!</p>
-    </section>
-    <section>
-        <h2 id="yoka">Tony Yoka, l'avenir de la boxe</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde impedit libero quasi aut atque perspiciatis molestiae, facilis dolorem quidem quisquam sed culpa nulla reprehenderit! Autem minus odio unde corrupti dolorem!Amet dolores delectus incidunt ex nemo est dolore consequuntur labore quisquam odio! Minus nam deleniti adipisci corrupti omnis maxime repudiandae, dicta inventore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quia excepturi esse fuga aut sunt facilis nulla iste, temporibus beatae eaque voluptas necessitatibus dignissimos ut! Voluptatem velit illo voluptatum laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla illo, labore, ipsam nisi provident atque animi eum sed itaque sunt numquam harum molestiae suscipit nobis eligendi ipsum non ad. Blanditiis?</p>
-        <div class="galerie-2">
-            <figure>
-                <img src="img/yok.jpg" alt="Tony Yoka" class="filtre-gris">
-                <figcaption>Tony Yoka</figcaption>
-            </figure>
-            <figure>
-                <img src="img/yoka2.jpg" alt="Tony Yoka" class="filtre-gris">
-                <figcaption>Tony Yoka</figcaption>
-            </figure>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus porro laborum, aliquam culpa corporis tempora doloremque quam modi et sapiente reiciendis incidunt inventore velit repudiandae harum minima earum! Sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae temporibus autem eaque nisi repudiandae qui sapiente alias consectetur at, tenetur aliquam! Dolorum hic cumque asperiores ipsam dolor laboriosam ipsa perferendis.
-            Optio enim accusantium, itaque vitae explicabo quidem aliquam hic porro fuga tempore reprehenderit, perspiciatis minus harum quo! Atque repellendus, libero explicabo magnam natus nemo hic ducimus sint tempora unde? Quisquam!
-            Culpa dignissimos, eius porro non quam nihil commodi expedita voluptatem voluptate fugiat! Optio rem deserunt ipsum quasi est ea beatae, illum fugit cupiditate magni nostrum incidunt nisi cum eius corrupti?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iure, adipisci excepturi exercitationem repudiandae beatae ea magnam laborum quidem in, qui consequatur hic voluptas laudantium ex rerum cumque ducimus. Eum!
-            Necessitatibus nisi quidem esse incidunt reiciendis! Voluptatibus, illum veritatis odit beatae quidem, nihil doloribus consectetur optio, quos fuga similique labore architecto voluptates iusto. Sequi facilis nulla vel magni, cum voluptates!
-            Sint soluta in fugiat ad iste, illum voluptatum rerum at excepturi expedita eum minus repudiandae iure quidem officiis nostrum tempore dicta neque accusamus repellat, dignissimos quae. Illum fugiat non eligendi!
-            Libero saepe repellendus, at hic error facere ipsa nihil ducimus dolores autem facilis aspernatur commodi et, temporibus quis, vero sunt illo tenetur qui perspiciatis rem culpa? Ex rem quod illo.
-            Quidem tempore nisi nulla obcaecati nesciunt doloremque illo, eum dolorem! Aperiam consectetur iure unde ducimus minus quas architecto. Eligendi, possimus quos recusandae odio illum quaerat unde eum commodi iusto atque.</p>
-        </div>
-    </section>
-    <section id="formulaire">
-        <h2>Votez pour le meilleur !</h2>
-        <form action="resultat.php" method="post">
-            <label for="text">Qui est, selon vous, le meilleur ?</label>
-            <select name="meilleurBoxeur" id="meilleurBoxeur">
-                <option value="">Mohamed Ali</option>
-                <option value="">Mike Tyson</option>
-                <option value="">Tony Yoka</option>
-            </select>
-        </form>
-    </section>
+    <div id="container">
+        <header>
+            <h1>La boxe à travers les âges</h1>
+            <nav>
+                <a href="#intro">Introduction</a>
+                <a href="#ali">Mohamed Ali</a>
+                <a href="#tyson">Mike Tyson</a>
+                <a href="#yoka">Tony Yoka</a>
+                <a href="#formulaire">Votez !</a>
+            </nav>
+        </header>
+        <section>
+            <h2 id="intro">Introduction à la boxe</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa autem consequuntur maxime deserunt nobis accusantium consectetur dicta, ad itaque magni ullam perspiciatis beatae a soluta atque suscipit numquam ipsum nostrum.</p>
+            <p>Sint beatae corporis voluptatum vel voluptas quas dolores assumenda minus earum ratione, ut, molestiae laboriosam est cum. Nemo esse vitae accusantium rerum, repellendus iure? Cum voluptatibus id ipsam voluptas quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, repudiandae esse, vel quae voluptates est amet quaerat libero sit obcaecati asperiores iusto ducimus ad debitis earum neque? Officia, ullam voluptate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque expedita impedit consectetur necessitatibus repudiandae esse ab? Amet accusantium voluptates tenetur dolorem repellendus perspiciatis recusandae quasi repellat aperiam dolore? Minima, pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus non quasi culpa necessitatibus animi aliquid nulla itaque eius, corporis fugiat asperiores velit iusto laborum natus id, accusamus eum exercitationem pariatur.</p>
+        </section>
+        <section>
+            <h2 id="ali">Mohammed Ali, uen boxe révolutionnaire</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque modi quisquam corrupti, odio maxime est dolorem totam soluta doloribus consequuntur aliquam porro earum sapiente officia voluptatum minus excepturi aperiam sequi.</p>
+            <div class="galerie-1">
+                <figure>
+                    <img src="img/ali.jpg" alt="Mohamed Ali">
+                    <figcaption>Mohamed Ali</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/ali2.jpg" alt="Mohamed Ali">
+                    <figcaption>Mohamed Ali</figcaption>
+                </figure>
+                <table>
+                    <tr>
+                        <th colspan="2">Des combats légendaires</th>
+                    </tr>
+                    <tr>
+                        <td>Sonny Liston</td>
+                        <td>25 mai 1965</td>
+                    </tr>
+                    <tr>
+                        <td>Joe Frazier</td>
+                        <td>8 mars 1971</td>
+                    </tr>
+                    <tr>
+                        <td>George Foreman</td>
+                        <td>30 octobre 1974</td>
+                    </tr>
+                    <tr>
+                        <td>Joe Frazier</td>
+                        <td>1<sup>er</sup> octobre 1975</td>
+                    </tr>
+                    <tr>
+                        <td>Trevor Berbick</td>
+                        <td>11 décembre 1981</td>
+                    </tr>
+                </table>
+            </div>
+            <table></table>
+        </section>
+        <section>
+            <h2 id="tyson">Mike Tyson, l'héritier</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero id possimus iusto illo. Et deleniti sit magnam ducimus quam, excepturi odio, reprehenderit tempore nisi omnis amet inventore, dolorem harum voluptas.</p>
+            <p>Praesentium error harum autem cum odio delectus vel iste sequi voluptatum magnam placeat modi, ad non tenetur perspiciatis quam quas sed saepe laudantium nobis necessitatibus molestias accusantium. Dicta, vel? Temporibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga incidunt non ex illum similique eum maxime accusantium debitis ducimus mollitia dolorem sed quasi accusamus fugit, ipsa quam. Nemo, amet laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quidem libero tempora vitae similique exercitationem tempore cum modi sapiente nobis necessitatibus totam labore nesciunt ipsa. Consequatur error delectus corporis quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore itaque fugit, beatae optio commodi tenetur ad at vero dolorum deserunt cum vel accusantium dolorem libero enim voluptate a accusamus exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla, natus voluptates sit explicabo pariatur qui dolorem! Provident cumque, numquam quos architecto alias harum iste mollitia! At quis saepe magnam!</p>
+            <div class="galerie-2">
+                <figure>
+                    <img src="img/tyson.jpg" alt="Mike Tyson" class="filtre-gris">
+                    <figcaption>Mike Tyson</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/tyson2.jpg" alt="Mike Tyson" class="filtre-gris">
+                    <figcaption>Mike Tyson</figcaption>
+                </figure>
+            </div>
+            <p>Doloribus nisi reiciendis tempore in assumenda dolorem repellendus hic id ad et, corporis totam nulla minus quidem delectus iure ea sint alias! Minus necessitatibus aperiam eum cupiditate facere dolores? Porro!</p>
+        </section>
+        <section>
+            <h2 id="yoka">Tony Yoka, l'avenir de la boxe</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde impedit libero quasi aut atque perspiciatis molestiae, facilis dolorem quidem quisquam sed culpa nulla reprehenderit! Autem minus odio unde corrupti dolorem!Amet dolores delectus incidunt ex nemo est dolore consequuntur labore quisquam odio! Minus nam deleniti adipisci corrupti omnis maxime repudiandae, dicta inventore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quia excepturi esse fuga aut sunt facilis nulla iste, temporibus beatae eaque voluptas necessitatibus dignissimos ut! Voluptatem velit illo voluptatum laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla illo, labore, ipsam nisi provident atque animi eum sed itaque sunt numquam harum molestiae suscipit nobis eligendi ipsum non ad. Blanditiis?</p>
+            <div class="galerie-2">
+                <figure>
+                    <img src="img/yok.jpg" alt="Tony Yoka" class="filtre-gris">
+                    <figcaption>Tony Yoka</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/yoka2.jpg" alt="Tony Yoka" class="filtre-gris">
+                    <figcaption>Tony Yoka</figcaption>
+                </figure>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus porro laborum, aliquam culpa corporis tempora doloremque quam modi et sapiente reiciendis incidunt inventore velit repudiandae harum minima earum! Sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae temporibus autem eaque nisi repudiandae qui sapiente alias consectetur at, tenetur aliquam! Dolorum hic cumque asperiores ipsam dolor laboriosam ipsa perferendis.
+                Optio enim accusantium, itaque vitae explicabo quidem aliquam hic porro fuga tempore reprehenderit, perspiciatis minus harum quo! Atque repellendus, libero explicabo magnam natus nemo hic ducimus sint tempora unde? Quisquam!
+                Culpa dignissimos, eius porro non quam nihil commodi expedita voluptatem voluptate fugiat! Optio rem deserunt ipsum quasi est ea beatae, illum fugit cupiditate magni nostrum incidunt nisi cum eius corrupti?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iure, adipisci excepturi exercitationem repudiandae beatae ea magnam laborum quidem in, qui consequatur hic voluptas laudantium ex rerum cumque ducimus. Eum!
+                Necessitatibus nisi quidem esse incidunt reiciendis! Voluptatibus, illum veritatis odit beatae quidem, nihil doloribus consectetur optio, quos fuga similique labore architecto voluptates iusto. Sequi facilis nulla vel magni, cum voluptates!
+                Sint soluta in fugiat ad iste, illum voluptatum rerum at excepturi expedita eum minus repudiandae iure quidem officiis nostrum tempore dicta neque accusamus repellat, dignissimos quae. Illum fugiat non eligendi!
+                Libero saepe repellendus, at hic error facere ipsa nihil ducimus dolores autem facilis aspernatur commodi et, temporibus quis, vero sunt illo tenetur qui perspiciatis rem culpa? Ex rem quod illo.
+                Quidem tempore nisi nulla obcaecati nesciunt doloremque illo, eum dolorem! Aperiam consectetur iure unde ducimus minus quas architecto. Eligendi, possimus quos recusandae odio illum quaerat unde eum commodi iusto atque.</p>
+            </div>
+        </section>
+        <section id="formulaire">
+            <h2>Votez pour le meilleur !</h2>
+            <form action="resultat.php" method="post">
+                <label for="text">Qui est, selon vous, le meilleur ?</label>
+                <select name="meilleurBoxeur" id="meilleurBoxeur">
+                    <option value="">Mohamed Ali</option>
+                    <option value="">Mike Tyson</option>
+                    <option value="">Tony Yoka</option>
+                </select>
+                <label for=""></label>
+            </form>
+        </section>
+    </div>
 </body>
 </html>
