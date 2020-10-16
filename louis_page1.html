@@ -1,1 +1,78 @@
-louis_page1
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 1</title>
+    <style>
+        body {
+        background-color: lightsalmon;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-size: xx-large;
+            margin-bottom: 50px;
+        }
+        h2 {
+            text-align: center;
+            color: papayawhip;
+        }
+        p {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        figure img {
+            width: 400px;
+            height: 250px;
+            border-radius: 15px;
+        }
+        #oeuvres {
+            
+        }
+        .d-flex {
+            display: flex;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Erwin Wurm</h1>
+    <section>
+        <h2>Présentation</h2>
+        <p>L’artiste autrichien est célèbre pour son oeuvre conceptuelle mêlant sculpture, performances, vidéo, dessin et photographie, à travers laquelle il associe espièglerie et sens profond de l’absurde. Son travail interroge souvent avec ironie et cynisme notre relation au corps, plaçant fréquemment le spectateur dans une relation paradoxale avec les objets. S’il est essentiellement connu pour ses sculptures, la photographie en tant que médium a toujours joué un rôle primordial dans son travail, à la fois pour illustrer et archiver ses œuvres et performances éphémères, mais également en tant que médium à part entière.</p>
+        <p></p>
+    </section>
+    <h2>Oeuvres</h2>
+    <div class="oeuvres d-flex">
+        <figure>
+            <img src="img/erwan_wurm.jpeg" alt="photo erwan wurm">
+                <figcaption>Photographie d'Erwan Wurm</figcaption>
+        </figure>
+        <figure>
+            <img src="img/erwan_wurm2.jpeg" alt="photo erwan wurm">
+            <figcaption>Photographie d'Erwan Wurm</figcaption>
+        </figure>
+        <figure>
+            <img src="img/erwan_wurm3jpg.jpg" alt="photo erwan wurm">
+            <figcaption>Photographie d'Erwan Wurm</figcaption>
+        </figure>
+    </div>
+    <section>
+        <h2>Exposition</h2>
+        <p> 
+        La Maison Européenne de la Photographie vous invite à découvrir sous un nouvel angle le travail d’Erwin Wurm, artiste de renommée internationale, dans le cadre de la première rétrospective consacrée à son approche photographique.
+        </p>
+            <div class="reserver d-flex">
+                <label for="name">Entrer votre nom: </label>
+                <input type="text" name="name" id="name" required>
+                <label for="email">Entrer votre email: </label>
+                <input type="email" name="email" id="email" required>
+                <form action="" method="POST" class="reservation">
+                <input type="submit" name="resa">
+            </div>
+       
+        </form>
+    </section>
+</body>
+</html>
