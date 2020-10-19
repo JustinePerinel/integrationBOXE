@@ -1,0 +1,203 @@
+/* mes couleurs dans :root */
+body {
+    background-color: var(--header-fond);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --orange : #ea9f05;
+    --gris-fond : #f3f3f3;
+    --footer : #373737;
+    --header-fond : #efefef;
+    --header-user : #e5e5e5;
+    --bg-noir : #1c1c1c;
+    --gris-icone : #818181;
+    --blanc : #fff;
+}
+
+header {
+    background-color: var(--header-fond);
+    height: 210px;
+    width: 1050px;
+    margin: 0 auto;
+}
+
+#degrade-orange {
+    width: 5px;
+    height: 190px;
+    background: linear-gradient(to top, var(--orange), transparent);
+}
+
+h1 {
+    height: 85px;
+    width: 330px;
+    text-indent: -50000px;
+    margin-top: 60px;
+
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+h6 span {
+    color: var(--orange);
+}
+
+.degrade-gris {
+    max-width: 1px;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to top, var(--gris-icone), transparent);
+}
+
+.menu-user {
+    background: var(--header-user);
+    width: 530px;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid var(--bg-noir);
+}
+
+.menu-user a {
+    position: relative;
+    bottom: 20px;
+    text-decoration: none;
+    color: var(--bg-noir);
+    font-size: 14px;
+    padding: 10px;
+}
+
+.menu-user img {
+    max-height: 50px;
+    margin-left: 50px;
+}
+
+#user {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+    margin-bottom: 35px;
+}
+
+nav {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #1c1c1c;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+main {
+    background-color: var(--bg-noir);
+}
+
+.bg-catalogue {
+    width: 1050px;
+    height: 355px;
+    margin: auto;
+    background: url(../img/header-page-catalogue.png) no-repeat bottom;
+}
+
+#container {
+    width: 1050px;
+    background: var(--gris-fond);
+    margin: auto;
+    box-shadow: 0px 0px 7px 3px rgb(0, 0, 0);
+}
+
+#galerie, #galerie-2 {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
+
+figure {
+    width: 370px;
+    height: 380px;
+    background: var(--blanc);
+    box-shadow: 0px 0px 7px 3px rgb(143, 143, 143);
+}
+
+figcaption {
+    text-transform: uppercase;
+    position: relative;
+    bottom: 35px;
+    text-align: center;
+    width: 370px;
+}
+
+/* La classe pour créer une rangée */
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Les colonnes*/
+.col-1 {
+    width: 6.333333%;
+    margin: 1%;
+}
+.col-2 {
+    width: 14.6666%;
+    margin: 1%;
+}
+.col-3 {
+    width: 23%;
+    margin: 1%;
+}
+.col-4 {
+    width: 31.333333%;
+    margin: 1%;
+}
+.col-5 {
+    width: 39.6666666%;
+    margin: 1%;
+}
+.col-6 {
+    width: 48%;
+    margin: 1%;
+    margin: auto;
+}
+.col-7 {
+    width: 56.333333%; 
+    margin: 1%;
+}
+.col-8 {
+    width: 64.666666%;
+    margin: 1%; 
+}
+.col-9 {
+    width: 73%;
+    margin: 1%;  
+}
+.col-10 {
+    width: 81.333333%;
+    margin: 1%;  
+}
+.col-11 {
+    width: 89.666666%;
+    margin: 1%;   
+}
+.col-12 {
+    width: 98%;
+    margin: 1%;   
+}

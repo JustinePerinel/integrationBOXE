@@ -7,79 +7,94 @@
     <!-- normalize -->
     <link rel="stylesheet" href="css/normalize.css">
     <!-- mes styles -->
+    <link rel="stylesheet" href="css/justine-style.css">
 </head>
 <body>
-    <header>
-        <div>
+    <header class="row">
+        <div id="degrade-orange" class="col-1"></div>
+        <div class="col-5">
             <h1>sports.com</h1>
-            <p>Lorem ipsum dolor <span>sit amet</span></p>
+            <h6>Lorem ipsum dolor <span>sit amet</span></h6>
         </div> <!-- fin logo du site / à gauche -->
-        <div>
-            <div>
-                <img src="img/icon-mon-compte.png" alt="icone mon compte : sport.com">
-                <a href="#">Mon compte</a>
-                <img src="img/icon-mon-panier.png" alt="icone panier : sport.com">
-                <a href="#">Votre panier est vide</a>
+        <div class="col-6">
+            <div class="menu-user">
+                <div>
+                    <img src="img/icon-mon-compte.png" alt="icone mon compte : sport.com">
+                    <a href="#">Mon compte</a>
+                </div>
+                <div>
+                    <img src="img/icon-mon-panier.png" alt="icone panier : sport.com">
+                    <a href="#">Votre panier est vide</a>
+                </div>
             </div> <!-- fin de la div côté user  -->
-            <h6>Bonjour Julien</h6>
-            <nav>
-                <a href="#">Contactez-nous</a>
-                <a href="#">Parrainage</a>
-                <a href="#">Déconnexion</a>
+            <h6 id="user">Bonjour Julien</h6>
+            <nav class="row">
+                <div class="degrade-gris col-1"></div>
+                <a href="#" class="col-3">Contactez-nous</a>
+                <div class="degrade-gris col-1"></div>
+                <a href="#" class="col-3">Parrainage</a>
+                <div class="degrade-gris col-1"></div>
+                <a href="#" class="col-3">Déconnexion</a>
+                <div class="degrade-gris col-1"></div>
             </nav> <!-- fin de la nav -->
         </div> <!-- div à droite du header -->
     </header>
 
     <main>
-        <div id="container">
-            <div>
-                <figure>
-                    <img src="img/gant-boxe-2.png" alt="">
-                    <figcaption>Gants de boxe combat klimax v3</figcaption>
-                </figure>
-                <div class="reduc">-45%</div>
-                <div class="prix">
-                    <a href="#">Voir la vente</a>
-                    <p class="prix-barre">120€</p>
-                    <p class="prix-actuel">65€</p>
-                </div>
-            </div> <!-- ZONE 1 -->
-            <div>
-                <figure>
-                    <img src="img/gant-boxe-1.png" alt="">
-                    <figcaption>Gants de boxe combat klimax v3</figcaption>
-                </figure>
-                <div class="reduc">-60%</div>
-                <div class="prix">
-                    <a href="#">Voir la vente</a>
-                    <p class="prix-barre">120€</p>
-                    <p class="prix-actuel">65€</p>
-                </div>
-            </div><!-- ZONE 2 -->
-            <div>
-                <figure>
-                    <img src="img/gant-boxe-2.png" alt="">
-                    <figcaption>Gants de boxe combat klimax v3</figcaption>
-                </figure>
-                <div class="reduc">-30%</div>
-                <div class="prix">
-                    <a href="#">Voir la vente</a>
-                    <p class="prix-barre">120€</p>
-                    <p class="prix-actuel">65€</p>
-                </div>
-            </div><!-- ZONE 3 -->
-            <div>
-                <figure>
-                    <img src="img/gant-boxe-1.png" alt="">
-                    <figcaption>Gants de boxe combat klimax v3</figcaption>
-                </figure>
-                <div class="reduc">-70%</div>
-                <div class="prix">
-                    <a href="#">Voir la vente</a>
-                    <p class="prix-barre">120€</p>
-                    <p class="prix-actuel">65€</p>
-                </div>
-            </div><!-- ZONE 4 -->
+        <div class="bg-catalogue"></div>
+        <div id="container"> 
+            <div id="galerie">
+                <div>
+                    <figure>
+                        <img src="img/gant-boxe-2.png" alt="">
+                        <figcaption>Gants de boxe combat klimax v3</figcaption>
+                    </figure>
+                    <div class="reduc">-45%</div>
+                    <div class="prix">
+                        <a href="#">Voir la vente</a>
+                        <p class="prix-barre"><s>120€</s></p>
+                        <p class="prix-actuel">65€</p>
+                    </div>
+                </div> <!-- ZONE 1 -->
+                <div>
+                    <figure>
+                        <img src="img/gant-boxe-1.png" alt="">
+                        <figcaption>Gants de boxe combat klimax v3</figcaption>
+                    </figure>
+                    <div class="reduc">-60%</div>
+                    <div class="prix">
+                        <a href="#">Voir la vente</a>
+                        <p class="prix-barre"><s>120€</s></p>
+                        <p class="prix-actuel">65€</p>
+                    </div>
+                </div><!-- ZONE 2 -->
+            </div>
+            <div id="galerie-2">
+                <div>
+                    <figure>
+                        <img src="img/gant-boxe-2.png" alt="">
+                        <figcaption>Gants de boxe combat klimax v3</figcaption>
+                    </figure>
+                    <div class="reduc">-30%</div>
+                    <div class="prix">
+                        <a href="#">Voir la vente</a>
+                        <p class="prix-barre"><s>120€</s></p>
+                        <p class="prix-actuel">65€</p>
+                    </div>
+                </div><!-- ZONE 3 -->
+                <div>
+                    <figure>
+                        <img src="img/gant-boxe-1.png" alt="">
+                        <figcaption>Gants de boxe combat klimax v3</figcaption>
+                    </figure>
+                    <div class="reduc">-70%</div>
+                    <div class="prix">
+                        <a href="#">Voir la vente</a>
+                        <p class="prix-barre"><s>120€</s></p>
+                        <p class="prix-actuel">65€</p>
+                    </div>
+                </div><!-- ZONE 4 -->
+            </div>
 
             <div class="grise">.</div> <!-- une zone grise -->
 
