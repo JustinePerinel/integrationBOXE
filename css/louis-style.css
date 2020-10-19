@@ -96,15 +96,26 @@
     margin-left: 91.666666%;
 }
 
-
 body {
     background-color: lightgrey;
 }
 
+:root {
+    --orange : #ea9f05;
+    --gris-fond : #f3f3f3;
+    --footer : #373737;
+    --header-fond : #efefef;
+    --header-user : #e5e5e5;
+    --bg-noir : #1c1c1c;
+    --gris-icone : #818181;
+    --blanc : #fff;
+}
+
 header {
     width: 1050px;
-    background-color: aqua;
+    background-color: var(--header-fond);
     margin: auto;
+    height: 210px;
 }
 
 .row {
@@ -119,12 +130,15 @@ header {
     margin: auto;
 }
 
-.flex-justify-content-sp-b {
-    justify-content: space-around;
-}
+h1 {
+    height: 85px;
+    width: 330px;
+    text-indent: -50000px;
+    margin-top: 60px;
 
-.flex-align-item-center {
-    align-items: center;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #container .prixbarre {
