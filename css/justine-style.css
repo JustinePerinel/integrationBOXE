@@ -156,7 +156,7 @@ main {
     box-shadow: 0px 0px 7px 3px rgb(143, 143, 143);
 }
 
-figcaption {
+#container figcaption {
     text-transform: uppercase;
     position: relative;
     bottom: 35px;
@@ -181,10 +181,6 @@ figcaption {
     right: -350px;
 }
 
-.prix {
-    width: 370px;
-}
-
 #galerie a, #galerie-2 a {
     width: 170px;
     height: 35px;
@@ -197,24 +193,32 @@ figcaption {
     margin-top: 10px;
 }
 
+.prix {
+    width: 390px;
+    padding-left: 60px;
+}
+
 .prix-barre {
     font-weight: 700;
     text-decoration: line-through;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 5px;
 }
 
 .prix-actuel {
     color: var(--orange);
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 700;
-    margin-top: 10px;
+    margin-top: 0;
+    margin-left: 12px;
 }
 
 .grise {
     height: 25px;
     background-color: var(--footer);
-    width: 5000px;
     position: relative;
-    left: -2000px;
+    bottom: 78px;
 }
 
 #nav-footer {
@@ -222,9 +226,18 @@ figcaption {
     margin: auto;
     height: 55px;
     display: flex;
-    justify-content: space-around;
-    background: var(--header-fond);
-    line-height: 100px;
+    justify-content: space-evenly;
+    background: var(--header-user);
+    border: 2px solid var(--bg-noir);
+    font-size: small;
+    border-radius: 0 0 10px 10px;
+    margin-top: -5px;
+    position: relative;
+    z-index: 1;
+}
+
+#nav-footer a {
+    margin-top: 20px;
 }
 
 .rond {
@@ -232,9 +245,29 @@ figcaption {
     height: 10px;
     background-color: rgb(185, 185, 185);
     border-radius: 50px;
-    position: relative;
-    bottom: 10px;
 }
+
+footer {
+    background-color: var(--footer);
+    position: relative;
+    bottom: 55px;
+}
+
+#galerie-3 {
+    margin: auto;
+    padding: 80px 10px 0 10px;
+    width: 700px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#galerie-3 figcaption {
+    color: var(--gris-fond);
+    width: 160px;
+    position: relative;
+    text-align: center;
+}
+
 
 /* La classe pour créer une rangée */
 .row {
